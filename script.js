@@ -1,4 +1,17 @@
 // Scroll reveal
+const contactEmail = 'rogermuntane123@gmail.com';
+
+const emailLink = document.querySelector('a[href^="mailto:"]');
+const emailValue = document.querySelector('a[href^="mailto:"] .contact-link-value');
+
+if (emailLink) {
+    emailLink.href = `mailto:${contactEmail}`;
+}
+
+if (emailValue) {
+    emailValue.textContent = contactEmail;
+}
+
 const revealEls = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
