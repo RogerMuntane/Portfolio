@@ -57,3 +57,44 @@ function handleForm(e) {
 }
 
 window.handleForm = handleForm;
+
+// i18n
+const userLang = localStorage.getItem('lang') || navigator.language.slice(0, 2);
+let currentLang = ['ca', 'es', 'en'].includes(userLang) ? userLang : 'ca';
+
+async function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    try {
+        const res = await fetch(`locales/${lang}.json`);
+        const translations = await res.json();
+        
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[key]) {
+                el.innerHTML = translations[key];
+            }
+        });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (translations[key]) {
+                el.setAttribute('placeholder', translations[key]);
+            }
+        });
+    } catch (e) {
+        console.error('Error loading language', e);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setLanguage(currentLang);
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+});
+

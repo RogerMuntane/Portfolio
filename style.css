@@ -115,6 +115,35 @@
         color: #fff;
     }
 
+    .lang-switcher {
+        display: flex;
+        gap: 0.5rem;
+        margin-left: 2rem;
+    }
+
+    .lang-btn {
+        background: none;
+        border: 1px solid var(--border-color);
+        color: var(--slate-light);
+        font-family: 'DM Mono', monospace;
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+        border-color: var(--slate-light);
+        color: #fff;
+    }
+
+    .lang-btn.active {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        border-color: #fff;
+    }
+
     /* ── SECTIONS ── */
     section {
         padding: 100px 0;

@@ -19,12 +19,17 @@
     <nav>
         <a href="#hero" class="nav-logo">rm<span>.</span>dev</a>
         <ul class="nav-links">
-            <li><a href="#sobre">Sobre mi</a></li>
-            <li><a href="#formacio">Formació</a></li>
-            <li><a href="#projectes">Projectes</a></li>
-            <li><a href="#habilitats">Habilitats</a></li>
-            <li><a href="#contacte">Contacte</a></li>
+            <li><a href="#sobre" data-i18n="nav_about">Sobre mi</a></li>
+            <li><a href="#formacio" data-i18n="nav_education">Formació</a></li>
+            <li><a href="#projectes" data-i18n="nav_projects">Projectes</a></li>
+            <li><a href="#habilitats" data-i18n="nav_skills">Habilitats</a></li>
+            <li><a href="#contacte" data-i18n="nav_contact">Contacte</a></li>
         </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="ca">CA</button>
+            <button class="lang-btn" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
     </nav>
 
     <!-- HERO -->
@@ -35,11 +40,11 @@
         <div class="hero-content">
             <div class="hero-tag">
                 <span class="hero-tag-dot"></span>
-                Disponible per a noves oportunitats
+                <span data-i18n="hero_available">Disponible per a noves oportunitats</span>
             </div>
             <h1 class="hero-name">Roger<br><span class="hero-name-accent">Muntané</span></h1>
-            <p class="hero-role">Desenvolupador Web <strong>Full-Stack Junior</strong></p>
-            <p class="hero-tagline">
+            <p class="hero-role" data-i18n="hero_role">Desenvolupador Web <strong>Full-Stack Junior</strong></p>
+            <p class="hero-tagline" data-i18n="hero_tagline">
                 "Escric codi per resoldre problemes reals — amb cura pels detalls i ganes de seguir aprenent."
             </p>
             <div class="hero-ctas">
@@ -49,7 +54,7 @@
                         <polyline points="16 18 22 12 16 6" />
                         <polyline points="8 6 2 12 8 18" />
                     </svg>
-                    Veure projectes
+                    <span data-i18n="btn_projects">Veure projectes</span>
                 </a>
                 <a href="#contacte" class="btn-outline">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -57,25 +62,25 @@
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                         <polyline points="22,6 12,12 2,6" />
                     </svg>
-                    Contacta'm
+                    <span data-i18n="btn_contact">Contacta'm</span>
                 </a>
             </div>
             <div class="hero-stats">
                 <div>
                     <div class="hero-stat-num">3<span>+</span></div>
-                    <div class="hero-stat-label">Projectes complets</div>
+                    <div class="hero-stat-label" data-i18n="stat_projects">Projectes complets</div>
                 </div>
                 <div>
                     <div class="hero-stat-num">2<span>+</span></div>
-                    <div class="hero-stat-label">Anys de formació</div>
+                    <div class="hero-stat-label" data-i18n="stat_years">Anys de formació</div>
                 </div>
                 <div>
                     <div class="hero-stat-num">6<span>m</span></div>
-                    <div class="hero-stat-label">Pràctiques reals</div>
+                    <div class="hero-stat-label" data-i18n="stat_internship">Pràctiques reals</div>
                 </div>
                 <div>
                     <div class="hero-stat-num">30<span>+</span></div>
-                    <div class="hero-stat-label">Tecnologies</div>
+                    <div class="hero-stat-label" data-i18n="stat_tech">Tecnologies</div>
                 </div>
             </div>
         </div>
@@ -87,22 +92,21 @@
             <div class="sobre-grid">
                 <div class="sobre-text reveal">
                     <div class="section-label">Sobre mi</div>
-                    <h2 class="section-title">Qui sóc i<br>d'on vinc</h2>
-                    <p>Sóc Roger Muntané, graduat en el <strong>Cicle Superior de Desenvolupament d'Aplicacions Web
-                            (DAW)</strong> al Centre Thos i Codina de Mataró (2024–2026). Em va portar a aquest camí la
-                        capacitat de construir coses concretes i funcionals — des d'una interfície que l'usuari toca
-                        fins a l'arquitectura que ho sosté per sota.</p>
-                    <p>Durant la formació he treballat en projectes tant de <strong>frontend com de backend</strong>, i
-                        m'he adonat que em sento còmode en tota la pila. Em crida especialment tot el relacionat amb el
-                        backend i l'arquitectura de serveis, però sense perdre l'ull pel disseny i l'experiència
-                        d'usuari.</p>
-                    <p>El meu objectiu a curt termini és incorporar-me a un equip on pugui créixer professionalment,
-                        aprendre de companys amb més experiència i <strong>aportar des del primer dia</strong> amb codi
-                        net i actitud proactiva.</p>
-                    <div class="sobre-highlight">
-                        "Tres dels meus projectes principals han estat col·laboratius. M'adapto ràpidament als equips i
-                        aprenc molt més treballant amb altres persones que sol."
-                    </div>
+                    <h2 class="section-title" data-i18n="about_title">Qui sóc i<br>d\'on vinc</h2>
+                    <p data-i18n="about_p1">Sóc Roger Muntané, graduat en el <strong>Cicle Superior de Desenvolupament
+                            d\'Aplicacions Web (DAW)</strong> al Centre Thos i Codina de Mataró (2024–2026). Em va
+                        portar a aquest camí la capacitat de construir coses concretes i funcionals — des d\'una
+                        interfície que l\'usuari toca fins a l\'arquitectura que ho sosté per sota.</p>
+                    <p data-i18n="about_p2">Durant la formació he treballat en projectes tant de <strong>frontend com de
+                            backend</strong>, i m\'he adonat que em sento còmode en tota la pila. Em crida especialment
+                        tot el relacionat amb el backend i l\'arquitectura de serveis, però sense perdre l\'ull pel
+                        disseny i l\'experiència d\'usuari.</p>
+                    <p data-i18n="about_p3">El meu objectiu a curt termini és incorporar-me a un equip on pugui créixer
+                        professionalment, aprendre de companys amb més experiència i <strong>aportar des del primer
+                            dia</strong> amb codi net i actitud proactiva.</p>
+                    <div class="sobre-highlight" data-i18n="about_quote">"Tres dels meus projectes principals han estat
+                        col·laboratius. M\'adapto ràpidament als equips i aprenc molt més treballant amb altres persones
+                        que sol."</div>
                 </div>
                 <div class="sobre-cards reveal">
                     <div class="sobre-card">
@@ -117,9 +121,9 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="sobre-card-title">Treball en equip</div>
-                            <div class="sobre-card-desc">He col·laborat en projectes de 2 i 3 persones usant Git, GitLab
-                                i metodologies àgils amb Jira i Trello.</div>
+                            <div class="sobre-card-title" data-i18n="card1_title">Treball en equip</div>
+                            <div class="sobre-card-desc" data-i18n="card1_desc">He col·laborat en projectes de 2 i 3
+                                persones usant Git, GitLab i metodologies àgils amb Jira i Trello.</div>
                         </div>
                     </div>
                     <div class="sobre-card">
@@ -131,9 +135,9 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="sobre-card-title">Resolució de problemes</div>
-                            <div class="sobre-card-desc">M'agrada entendre per què les coses fallen. Des de bugs
-                                d'arquitectura fins a problemes de CORS a producció.</div>
+                            <div class="sobre-card-title" data-i18n="card2_title">Resolució de problemes</div>
+                            <div class="sobre-card-desc" data-i18n="card2_desc">M\'agrada entendre per què les coses
+                                fallen. Des de bugs d\'arquitectura fins a problemes de CORS a producció.</div>
                         </div>
                     </div>
                     <div class="sobre-card">
@@ -147,9 +151,10 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="sobre-card-title">Aprenentatge continu</div>
-                            <div class="sobre-card-desc">Cada projecte m'ha portat a aprendre noves tecnologies: Docker,
-                                Stripe, 2FA, microserveis. Sempre hi ha alguna cosa nova per explorar.</div>
+                            <div class="sobre-card-title" data-i18n="card3_title">Aprenentatge continu</div>
+                            <div class="sobre-card-desc" data-i18n="card3_desc">Cada projecte m\'ha portat a aprendre
+                                noves tecnologies: Docker, Stripe, 2FA, microserveis. Sempre hi ha alguna cosa nova per
+                                explorar.</div>
                         </div>
                     </div>
                     <div class="sobre-card">
@@ -165,9 +170,10 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="sobre-card-title">Atenció al detall</div>
-                            <div class="sobre-card-desc">Des de la nomenclatura del codi fins al disseny de la UI. Els
-                                petits detalls marquen la diferència entre un producte bo i un de gran.</div>
+                            <div class="sobre-card-title" data-i18n="card4_title">Atenció al detall</div>
+                            <div class="sobre-card-desc" data-i18n="card4_desc">Des de la nomenclatura del codi fins al
+                                disseny de la UI. Els petits detalls marquen la diferència entre un producte bo i un de
+                                gran.</div>
                         </div>
                     </div>
                     <div class="sobre-card">
@@ -181,9 +187,9 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="sobre-card-title">Idiomes</div>
-                            <div class="sobre-card-desc">Català (natiu) · Castellà (natiu) · Anglès (B1–B2). Capaç de
-                                llegir documentació tècnica en anglès sense problemes.</div>
+                            <div class="sobre-card-title" data-i18n="card5_title">Idiomes</div>
+                            <div class="sobre-card-desc" data-i18n="card5_desc">Català (natiu) · Castellà (natiu) ·
+                                Anglès (B1–B2). Capaç de llegir documentació tècnica en anglès sense problemes.</div>
                         </div>
                     </div>
                 </div>
@@ -196,34 +202,37 @@
         <div class="container">
             <div class="reveal">
                 <div class="section-label">Formació</div>
-                <h2 class="section-title">Educació &amp;<br>experiència</h2>
+                <h2 class="section-title" data-i18n="education_title">Educació &amp;<br>experiència</h2>
             </div>
             <div class="formacio-grid">
                 <div class="formacio-card main-card reveal">
-                    <div class="formacio-badge badge-blue">Titulació oficial</div>
-                    <div class="formacio-title">CFGS Desenvolupament d'Aplicacions Web (DAW)</div>
+                    <div class="formacio-badge badge-blue" data-i18n="badge_official">Titulació oficial</div>
+                    <div class="formacio-title" data-i18n="edu1_title">CFGS Desenvolupament d\'Aplicacions Web (DAW)
+                    </div>
                     <div class="formacio-sub">Centre Thos i Codina — Mataró</div>
-                    <div class="formacio-desc">Cicle formatiu de grau superior que cobreix el disseny i desenvolupament
-                        d'aplicacions web completes: frontend, backend, bases de dades, desplegament i seguretat. Al
-                        llarg del cicle he treballat amb frameworks moderns, arquitectures REST, contenidors Docker i
-                        metodologies de treball en equip.</div>
+                    <div class="formacio-desc" data-i18n="edu1_desc">Cicle formatiu de grau superior que cobreix el
+                        disseny i desenvolupament d\'aplicacions web completes: frontend, backend, bases de dades,
+                        desplegament i seguretat. Al llarg del cicle he treballat amb frameworks moderns, arquitectures
+                        REST, contenidors Docker i metodologies de treball en equip.</div>
                     <div class="formacio-year">2024 → 2026</div>
                 </div>
                 <div class="formacio-card reveal">
-                    <div class="formacio-badge badge-red">Pràctiques professionals</div>
+                    <div class="formacio-badge badge-red" data-i18n="badge_internship">Pràctiques professionals</div>
                     <div class="formacio-title">Pyming</div>
-                    <div class="formacio-sub">Especialistes en Odoo</div>
-                    <div class="formacio-desc">6 mesos de pràctiques en una empresa especialitzada en la implementació i
-                        personalització d'Odoo. Primer contacte amb un entorn empresarial real: metodologies, ritmes de
-                        treball i necessitats reals de clients.</div>
+                    <div class="formacio-sub" data-i18n="edu2_sub">Especialistes en Odoo</div>
+                    <div class="formacio-desc" data-i18n="edu2_desc">6 mesos de pràctiques en una empresa especialitzada
+                        en la implementació i personalització d\'Odoo. Primer contacte amb un entorn empresarial real:
+                        metodologies, ritmes de treball i necessitats reals de clients.</div>
                     <div class="formacio-year">2026 · 6 mesos</div>
                 </div>
                 <div class="formacio-card reveal">
-                    <div class="formacio-badge badge-slate">Formació complementària</div>
-                    <div class="formacio-title">Python des de zero</div>
+                    <div class="formacio-badge badge-slate" data-i18n="badge_complementary">Formació complementària
+                    </div>
+                    <div class="formacio-title" data-i18n="edu3_title">Python des de zero</div>
                     <div class="formacio-sub">Udemy</div>
-                    <div class="formacio-desc">Curs d'iniciació a Python complementari a la formació oficial. Cobreix
-                        els fonaments del llenguatge, estructures de dades, funcions i orientació a objectes.</div>
+                    <div class="formacio-desc" data-i18n="edu3_desc">Curs d\'iniciació a Python complementari a la
+                        formació oficial. Cobreix els fonaments del llenguatge, estructures de dades, funcions i
+                        orientació a objectes.</div>
                     <div class="formacio-year">Autoformatiu</div>
                 </div>
             </div>
@@ -235,7 +244,7 @@
         <div class="container">
             <div class="reveal">
                 <div class="section-label">Projectes</div>
-                <h2 class="section-title">Allò que he<br>construït</h2>
+                <h2 class="section-title" data-i18n="projects_title">Allò que he<br>construït</h2>
             </div>
 
             <div class="projectes-list">
@@ -243,16 +252,14 @@
                 <!-- PARKLIVE -->
                 <div class="project-card reveal">
                     <div class="project-body">
-                        <div class="project-number">01 / Projecte destacat</div>
+                        <div class="project-number">01 / <span data-i18n="proj_featured">Projecte destacat</span></div>
                         <div class="project-name">Parklive</div>
-                        <div class="project-type">Sistema de gestió d'aparcaments · Microserveis</div>
-                        <p class="project-desc">
-                            Plataforma completa de gestió d'aparcaments amb arquitectura de microserveis: dos backends
-                            independents (Python Flask i PHP), pagaments reals amb Stripe, autenticació social via
-                            Google OAuth
-                            2.0, generació de tiquets en PDF, optimització d'imatges amb Cloudinary i orquestració
-                            completa amb Docker Compose.
-                        </p>
+                        <div class="project-type" data-i18n="proj1_type">Sistema de gestió d\'aparcaments · Microserveis
+                        </div>
+                        <p class="project-desc" data-i18n="proj1_desc">Plataforma completa de gestió d\'aparcaments amb
+                            arquitectura de microserveis: dos backends independents (Python Flask i PHP), pagaments
+                            reals amb Stripe, autenticació social via Google OAuth 2.0, generació de tiquets en PDF,
+                            optimització d\'imatges amb Cloudinary i orquestració completa amb Docker Compose.</p>
                         <div class="project-tags">
                             <span class="tag">Python Flask</span>
                             <span class="tag">PHP</span>
@@ -279,15 +286,14 @@
                     </div>
                     <div class="project-side">
                         <div>
-                            <div class="project-challenge-title">Repte tècnic</div>
-                            <p class="project-challenge-text">Coordinar dos serveis backend independents (Python Flask i
-                                PHP)
-                                que comparteixen tokens JWT sense acoblar-se. Va requerir dissenyar un middleware
-                                d'autenticació compartit i gestionar la comunicació entre serveis via Docker networking
-                                intern.</p>
+                            <div class="project-challenge-title" data-i18n="challenge_title">Repte tècnic</div>
+                            <p class="project-challenge-text" data-i18n="proj1_challenge">Coordinar dos serveis backend
+                                independents (Python Flask i PHP) que comparteixen tokens JWT sense acoblar-se. Va
+                                requerir dissenyar un middleware d\'autenticació compartit i gestionar la comunicació
+                                entre serveis via Docker networking intern.</p>
                         </div>
                         <div class="project-team">
-                            <div>Equip</div>
+                            <div data-i18n="team_label">Equip</div>
                             <span>Roger Muntané + Xavier Ruiz</span>
                         </div>
                     </div>
@@ -296,9 +302,10 @@
                 <!-- CLUEDO -->
                 <div class="project-card reveal">
                     <div class="project-body">
-                        <div class="project-number">02 / Projecte en equip</div>
+                        <div class="project-number">02 / <span data-i18n="proj_team">Projecte en equip</span></div>
                         <div class="project-name">Cas Obert</div>
-                        <div class="project-type">Cluedo web full-stack · Aplicació interactiva</div>
+                        <div class="project-type" data-i18n="proj2_type">Cluedo web full-stack · Aplicació interactiva
+                        </div>
                         <p class="project-desc">
                             Joc de misteri tipus cluedo construït amb Alex Potlog. Backend Django amb API REST,
                             sistema
@@ -330,15 +337,15 @@
                     </div>
                     <div class="project-side">
                         <div>
-                            <div class="project-challenge-title">Repte tècnic</div>
-                            <p class="project-challenge-text">Mantenir la solució secreta sempre al backend sense
-                                filtrar-la mai al client. Va requerir dissenyar bé els endpoints i gestionar els estats
-                                del cas (en_curs, resolt, arxivat) amb TextChoices de Django, revelant la solució
-                                únicament quan el cas es tancava.</p>
+                            <div class="project-challenge-title" data-i18n="challenge_title">Repte tècnic</div>
+                            <p class="project-challenge-text" data-i18n="proj2_challenge">Mantenir la solució secreta
+                                sempre al backend sense filtrar-la mai al client. Va requerir dissenyar bé els endpoints
+                                i gestionar els estats del cas amb TextChoices de Django, revelant la solució únicament
+                                quan el cas es tancava.</p>
                         </div>
                         <div class="project-team">
-                            <div>Rol</div>
-                            <span>Desenvolupament full-stack i integració del cluedo web</span>
+                            <div data-i18n="role_label">Rol</div>
+                            <span data-i18n="proj2_role">Desenvolupament full-stack i integració del cluedo web</span>
                         </div>
                     </div>
                 </div>
@@ -346,15 +353,15 @@
                 <!-- PATHFINDER -->
                 <div class="project-card reveal">
                     <div class="project-body">
-                        <div class="project-number">03 / Projecte de fi de cicle</div>
+                        <div class="project-number">03 / <span data-i18n="proj_final">Projecte de fi de cicle</span>
+                        </div>
                         <div class="project-name">PathFinder</div>
-                        <div class="project-type">Plataforma comunitària de viatges · Stack modern</div>
-                        <p class="project-desc">
-                            Plataforma per compartir experiències de viatge amb publicació de rutes, sistema de votació,
-                            reports, rols diferenciats (admin, moderador, usuari), autenticació de dos factors (2FA),
-                            mapes interactius amb Leaflet i OpenStreetMap, cercador amb debounce i filtratge per país i
-                            categoria.
-                        </p>
+                        <div class="project-type" data-i18n="proj3_type">Plataforma comunitària de viatges · Stack
+                            modern</div>
+                        <p class="project-desc" data-i18n="proj3_desc">Plataforma per compartir experiències de viatge
+                            amb publicació de rutes, sistema de votació, reports, rols diferenciats (admin, moderador,
+                            usuari), autenticació de dos factors (2FA), mapes interactius amb Leaflet i OpenStreetMap,
+                            cercador amb debounce i filtratge per país i categoria.</p>
                         <div class="project-tags">
                             <span class="tag">Laravel 12</span>
                             <span class="tag">React 19</span>
@@ -380,14 +387,14 @@
                     </div>
                     <div class="project-side">
                         <div>
-                            <div class="project-challenge-title">Repte tècnic</div>
-                            <p class="project-challenge-text">Implementar el sistema de rols i permisos amb middleware
-                                propi a Laravel, assegurant que cada rol veiés exactament el que havia de veure. A més,
-                                integrar Inertia.js com a pont entre Laravel i React sense trencar el routing del
-                                backend.</p>
+                            <div class="project-challenge-title" data-i18n="challenge_title">Repte tècnic</div>
+                            <p class="project-challenge-text" data-i18n="proj3_challenge">Implementar el sistema de rols
+                                i permisos amb middleware propi a Laravel, assegurant que cada rol veiés exactament el
+                                que havia de veure. A més, integrar Inertia.js com a pont entre Laravel i React sense
+                                trencar el routing del backend.</p>
                         </div>
                         <div class="project-team">
-                            <div>Equip</div>
+                            <div data-i18n="team_label">Equip</div>
                             <span>Nicolas Miszczak · Jan Lopez · Roger Muntané</span>
                         </div>
                     </div>
@@ -402,11 +409,11 @@
         <div class="container">
             <div class="reveal">
                 <div class="section-label">Habilitats</div>
-                <h2 class="section-title">El meu<br>stack tècnic</h2>
+                <h2 class="section-title" data-i18n="skills_title">El meu<br>stack tècnic</h2>
             </div>
             <div class="skills-grid">
                 <div class="skill-group reveal">
-                    <div class="skill-group-title">Frontend</div>
+                    <div class="skill-group-title" data-i18n="skill_frontend">Frontend</div>
                     <div class="skill-chips">
                         <span class="chip"><span class="chip-dot dot-blue"></span>HTML5</span>
                         <span class="chip"><span class="chip-dot dot-blue"></span>CSS3</span>
@@ -421,7 +428,7 @@
                     </div>
                 </div>
                 <div class="skill-group reveal">
-                    <div class="skill-group-title">Backend</div>
+                    <div class="skill-group-title" data-i18n="skill_backend">Backend</div>
                     <div class="skill-chips">
                         <span class="chip"><span class="chip-dot dot-red"></span>PHP</span>
                         <span class="chip"><span class="chip-dot dot-red"></span>Laravel</span>
@@ -436,7 +443,7 @@
                     </div>
                 </div>
                 <div class="skill-group reveal">
-                    <div class="skill-group-title">Bases de dades</div>
+                    <div class="skill-group-title" data-i18n="skill_db">Bases de dades</div>
                     <div class="skill-chips">
                         <span class="chip"><span class="chip-dot dot-slate"></span>MySQL</span>
                         <span class="chip"><span class="chip-dot dot-slate"></span>MariaDB</span>
@@ -446,7 +453,7 @@
                     </div>
                 </div>
                 <div class="skill-group reveal">
-                    <div class="skill-group-title">Servidors i DevOps</div>
+                    <div class="skill-group-title" data-i18n="skill_devops">Servidors i DevOps</div>
                     <div class="skill-chips">
                         <span class="chip"><span class="chip-dot dot-blue"></span>Docker</span>
                         <span class="chip"><span class="chip-dot dot-blue"></span>Nginx</span>
@@ -455,7 +462,7 @@
                     </div>
                 </div>
                 <div class="skill-group reveal">
-                    <div class="skill-group-title">Control de versions</div>
+                    <div class="skill-group-title" data-i18n="skill_vcs">Control de versions</div>
                     <div class="skill-chips">
                         <span class="chip"><span class="chip-dot dot-red"></span>Git</span>
                         <span class="chip"><span class="chip-dot dot-red"></span>GitHub</span>
@@ -463,7 +470,7 @@
                     </div>
                 </div>
                 <div class="skill-group reveal">
-                    <div class="skill-group-title">Eines i entorn</div>
+                    <div class="skill-group-title" data-i18n="skill_tools">Eines i entorn</div>
                     <div class="skill-chips">
                         <span class="chip"><span class="chip-dot dot-slate"></span>Postman</span>
                         <span class="chip"><span class="chip-dot dot-slate"></span>ESLint</span>
@@ -484,14 +491,13 @@
         <div class="container">
             <div class="reveal">
                 <div class="section-label">Contacte</div>
-                <h2 class="section-title">Parlem<br>de la teva idea</h2>
+                <h2 class="section-title" data-i18n="contact_title">Parlem<br>de la teva idea</h2>
             </div>
             <div class="contacte-grid">
                 <div class="reveal">
-                    <p class="contacte-intro">
-                        Estic buscant la meva primera oportunitat professional. Si el teu equip necessita un junior
-                        motivat, amb base sòlida i ganes d'aprendre des del primer dia, m'agradaria molt parlar amb tu.
-                    </p>
+                    <p class="contacte-intro" data-i18n="contact_intro">Estic buscant la meva primera oportunitat
+                        professional. Si el teu equip necessita un junior motivat, amb base sòlida i ganes d\'aprendre
+                        des del primer dia, m\'agradaria molt parlar amb tu.</p>
                     <div class="contacte-links">
                         <a href="https://github.com/RogerMuntane" target="_blank" class="contact-link">
                             <div class="contact-link-icon">
@@ -541,7 +547,7 @@
                             </div>
                             <div>
                                 <div class="contact-link-label">Currículum</div>
-                                <div class="contact-link-value">Descarregar CV (PDF)</div>
+                                <div class="contact-link-value" data-i18n="contact_cv">Descarregar CV (PDF)</div>
                             </div>
                         </a>
                     </div>
@@ -550,8 +556,9 @@
                     <form class="form" onsubmit="handleForm(event)">
                         <div class="form-row">
                             <div class="form-group">
-                                <label class="form-label">Nom</label>
-                                <input type="text" class="form-input" placeholder="El teu nom" required>
+                                <label class="form-label" data-i18n="form_name">Nom</label>
+                                <input type="text" class="form-input" data-i18n-placeholder="form_name_ph"
+                                    placeholder="El teu nom" required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Email</label>
@@ -559,13 +566,14 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Empresa</label>
-                            <input type="text" class="form-input" placeholder="On treballes? (opcional)">
+                            <label class="form-label" data-i18n="form_company">Empresa</label>
+                            <input type="text" class="form-input" data-i18n-placeholder="form_company_ph"
+                                placeholder="On treballes? (opcional)">
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Missatge</label>
-                            <textarea class="form-textarea"
-                                placeholder="Explica'm en què puc ajudar o quina oportunitat tens..."
+                            <label class="form-label" data-i18n="form_msg">Missatge</label>
+                            <textarea class="form-textarea" data-i18n-placeholder="form_msg_ph"
+                                placeholder="Explica\'m en què puc ajudar o quina oportunitat tens..."
                                 required></textarea>
                         </div>
                         <button type="submit" class="form-submit" id="submit-btn">
@@ -574,7 +582,7 @@
                                 <line x1="22" y1="2" x2="11" y2="13" />
                                 <polygon points="22 2 15 22 11 13 2 9 22 2" />
                             </svg>
-                            Envia el missatge
+                            <span data-i18n="form_submit">Envia el missatge</span>
                         </button>
                     </form>
                 </div>
