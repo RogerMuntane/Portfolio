@@ -512,7 +512,8 @@
                                 <div class="contact-link-value">github.com/RogerMuntane</div>
                             </div>
                         </a>
-                        <a href="https://linkedin.com/in/roger-muntane" target="_blank" class="contact-link">
+                        <a href="https://www.linkedin.com/in/roger-muntan%C3%A9-cuadra-23041b3bb/?skipRedirect=true"
+                            target="_blank" class="contact-link">
                             <div class="contact-link-icon">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="#93BBFD">
                                     <path
@@ -554,26 +555,28 @@
                     </div>
                 </div>
                 <div class="reveal">
-                    <form class="form" onsubmit="handleForm(event)">
+                    <form class="form" action="https://formspree.io/f/mvzyqolr" method="POST" id="contact-form"
+                        onsubmit="handleForm(event)">
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label" data-i18n="form_name">Nom</label>
-                                <input type="text" class="form-input" data-i18n-placeholder="form_name_ph"
+                                <input type="text" name="name" class="form-input" data-i18n-placeholder="form_name_ph"
                                     placeholder="El teu nom" required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Email</label>
-                                <input type="email" class="form-input" placeholder="correu@empresa.com" required>
+                                <input type="email" name="email" class="form-input" placeholder="correu@empresa.com"
+                                    required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="form-label" data-i18n="form_company">Empresa</label>
-                            <input type="text" class="form-input" data-i18n-placeholder="form_company_ph"
+                            <input type="text" name="company" class="form-input" data-i18n-placeholder="form_company_ph"
                                 placeholder="On treballes? (opcional)">
                         </div>
                         <div class="form-group">
                             <label class="form-label" data-i18n="form_msg">Missatge</label>
-                            <textarea class="form-textarea" data-i18n-placeholder="form_msg_ph"
+                            <textarea name="message" class="form-textarea" data-i18n-placeholder="form_msg_ph"
                                 placeholder="Explica\'m en què puc ajudar o quina oportunitat tens..."
                                 required></textarea>
                         </div>
