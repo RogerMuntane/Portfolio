@@ -116,6 +116,18 @@ async function setLanguage(lang) {
                 el.setAttribute('placeholder', translations[key]);
             }
         });
+
+        // Update CV link based on language
+        const cvLink = document.getElementById('cv-link');
+        if (cvLink) {
+            if (lang === 'en') {
+                cvLink.href = 'Roger_Muntane_CV_2026_EN.pdf';
+            } else if (lang === 'es') {
+                cvLink.href = 'Roger_Muntane_CV_2026_ES.pdf';
+            } else {
+                cvLink.href = 'Roger_Muntane_CV_2026-3.pdf';
+            }
+        }
     } catch (e) {
         console.error('Error loading language', e);
     }
