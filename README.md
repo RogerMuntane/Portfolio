@@ -82,7 +82,7 @@ HTML5, CSS3, JavaScript, TypeScript, React, Vue.js, Bootstrap, SASS, Tailwind CS
 
 ### Backend
 
-PHP, Laravel, Python, Django, Flask, Node.js, Java, JWT, Bash Script, npm.
+PHP, Laravel, Python, Django, Flask, Java, JWT, Bash Script, npm.
 
 ### Bases de dades
 
